@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: #f5f2f0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+}
+[alt="model"]{
+    position: absolute;
+    margin: 0;
+    z-index: -1;
+    width: 34vw;
+    height: 120vh;
+}
+[alt="logo"]{
+    margin: 5rem 5rem;
+}
+.line{
+    border-bottom: 2px solid #000000;
+    height: 0.5rem;
+    width: 15rem;
+    margin: 0.8rem 0rem;
+}
+.item-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 20px;
+    margin: 2rem 0rem;
+}
+.header-element{
+    display: flex;
+    justify-content: space-evenly;
+}
+.mid{
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-columns: 1fr 0.5fr;
+}
+.textpart{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.Crea{
+    color: #000000;
+    -webkit-text-stroke: #000000 1px ;
+    -webkit-text-fill-color: transparent;
+    font-family: Merriweather,sans-serif;
+    font-size: 5vw;
+    display: grid;
+    align-self: center;
+    justify-self: center;
+}
+.sec{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 5vw;
+}
+.sec-t{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.5vw;
+    margin-top: 1rem;
+}
+.text-bottom{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+}
+.iconspart{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.icon{
+    display: flex;
+    margin: 1rem 0rem;
+}
+[alt="photo"]{
+    width: 29.2vw;
+}
+.buttonpart{
+    grid-column-start: 2;
+    /* justify-self: center; */
+    align-self: center;
+    border: none;
+    color:#f5f2f0;
+    background-color: #333333;
+    width: 12rem;
+    padding: 1rem 1rem;
+    font-size: 15px;
+    text-align: center;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 1;
+}
+[alt="arrow"]{
+    width: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+}
+.lists{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 4rem 0;
+}
+.list-items{
+    padding: 1rem 0rem;
+}
+.hline{
+    border-left: 2px solid #000000;
+    /* z-index: -1; */
+    position: absolute;
+    height: 308px;
+    top: 542px;
+    right:962.5px;
+    /* z-index: -1; */
+}
+li{
+    list-style:circle;
+    color:#333333;
+}
+
+
+@media screen and (max-width: 900px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .left{
+        display: none;
+    }   
+    .line{
+        display: none;
+    }
+    .item-header{
+        display: flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    [alt="photo"]{
+        width: 100%;
+    }
+    [alt="arrow"]{
+        width: 30vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3rem;
+    }
+    .Crea{
+        color: #000000;
+        -webkit-text-stroke: #000000 1px ;
+        -webkit-text-fill-color: transparent;
+        font-family: Merriweather,sans-serif;
+        font-size: 15vw;
+        display: grid;
+        align-self: center;
+        justify-self: center;
+    }
+    .sec{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        font-size: 15vw;
+    }
+    .sec-t{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 6.5vw;
+        margin: 1rem 1rem;
+    }
+    .buttonpart{
+        grid-column-start: 1;
+        /* justify-self: center; */
+        align-self: center;
+        border: none;
+        color:#f5f2f0;
+        background-color: #333333;
+        width: 10rem;
+        padding: 1rem 1rem;
+        font-size: 15px;
+        text-align: center;
+    }
+    .icon{
+        display: flex;
+        width: 1rem;
+        margin: 1rem 0rem;
+    }
+}
